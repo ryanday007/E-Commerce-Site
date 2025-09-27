@@ -7,21 +7,20 @@ body {
   box-sizing: border-box;
 }
 
-.main-wrapper {
-  max-width: 80%;
+.nav-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
   margin: 0 auto;
-  padding: 20px;
 }
 
 nav {
+  height: 80px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
 }
 
 .nav-img {
-  width: 120px;
 }
 
 .nav-links {
@@ -35,11 +34,7 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
