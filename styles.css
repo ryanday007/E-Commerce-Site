@@ -2,41 +2,111 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.nav-container {
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  justify-content: space-between;
-  margin: 0 auto;
+.span-purple {
+  color: rgb(137, 64, 137);
 }
 
-nav {
+/* Navigation Styles */
+
+#nav {
   height: 80px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 10%;
+  background-color: rgb(137, 64, 137, 0.1);
 }
 
-.nav-img {
+#nav-img {
+  height: 50%;
+  width: auto;
 }
 
-.nav-links {
+#nav-links {
   display: flex;
   gap: 15px;
 }
+#nav-link {
+  color: rgb(137, 64, 137);
+  padding: 10px;
+  border-radius: 5px;
+}
 
-.nav-links a {
+#nav-link {
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul {
+#nav ul {
   display: flex;
 }
 
-nav li {
+#nav li {
   list-style: none;
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 15%;
+}
+
+/* Hero Styles */
+
+#hero {
+  position: relative;
+  padding: 0 5%;
+  color: rgb(137, 64, 137);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgb(137, 64, 137, 0.1);
+}
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero-button {
+  background-color: rgb(137, 64, 137);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#hero-button:hover {
+  transform: translateY(-2px);
+}
+#hero img {
+  width: 30%;
+  height: auto;
+  margin-top: 8%;
+}
+
+#hero .wave {
+  width: 100vw;
+ }
+
+/* About Styles */
+#about {
+  background-color: white;
+  padding: 0 15%;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
 }

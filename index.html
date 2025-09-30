@@ -4,31 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css" / >
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav-container">
-          <img class="nav-img" src="./assets/Library.svg" alt="Library Logo" />
-          <ul class="nav-links">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#books">Books</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="section" id="nav">
+        <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
+        <ul id="nav-links">
+          <li><a id="nav-link" href="#home">Home</a></li>
+          <li><a id="nav-link" href="#books">Books</a></li>
+          <li><a id="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-      <div class="hero">
-        <h1>Welcome to Our E-Commerce Site</h1>
-        <p>Your one-stop shop for all your needs!</p>
-        <button class="hero-button">Shop Now</button>
+      <div class="section" id="hero">
+        <h1>Welcome to America's Favorite Online Library</h1>
+        <p>Your one-stop reading shop!</p>
+        <button id="hero-button">Browse Books</button>
+        <img src="./assets/Undraw_Books.svg" alt="Books Illustration" />
+        <img class="wave" src="./assets/wave.svg" alt="wavy border">
       </div>
-      <section id="featured-books">
+      <div class="section" id="about">
+        <h2>Why choose <span class="span-purple">Library?</span></h2>
+        <div class="highlight">
+          <div class="highlight-item">
+            
+            <p>Quick & Easy</p>
+          </div>
+          <div class="highlight-item">
+            <p>10k+ Books</p>
+          </div>
+          <div class="highlight-item">
+            <p>Affordable</p>
+          </div>
+        </div>
+        <p>
+          We are dedicated to providing a wide selection of books at competitive
+          prices. Our mission is to foster a love for reading and make books
+          accessible to everyone.
+        </p>
+      </div>
+      <section class="section" id="featured-books">
         <h2>Featured Books</h2>
         <!-- Product listings will go here -->
       </section>
-      <section id="latest-books">
+      <section class="section" id="latest-books">
         <h2>Latest Books</h2>
         <!-- Product listings will go here -->
       </section>
