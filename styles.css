@@ -12,7 +12,7 @@ body {
   color: rgb(137, 64, 137);
 }
 
-/* Navigation Styles */
+/* Nav Styles */
 
 #nav {
   height: 80px;
@@ -97,16 +97,45 @@ body {
 
 #hero .wave {
   width: 100vw;
- }
+}
 
 /* About Styles */
 #about {
+  position: relative;
   background-color: white;
-  padding: 0 15%;
+  padding: 0 5%;
 }
+
+#about .wave {
+  width: 100vw;
+}
+
+
+/* Highlight Styles */
 
 .highlight {
   display: flex;
   flex-direction: row;
-  gap: 4%;
+  justify-content: space-evenly;
+}
+
+.highlight-item {
+  width: 250px;
+  height: auto;
+}
+
+.highlight-item p {
+  font-size: small;
+  font-weight: 400;
+}
+
+.highlight i {
+  border: solid;
+  border-color: rgba(137, 64, 137, 0.504);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.highlight h3 {
+  font-size: medium;
 }
