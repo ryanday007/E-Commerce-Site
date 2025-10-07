@@ -270,30 +270,31 @@ body {
 }
 
 #footer-img {
-  height: 50%;
+  height: 50px;
   width: auto;
+  margin-top: 2%;
 }
 
-# footer -links {
+#footer-links {
   display: flex;
   gap: 16px;
 }
-# footer -link {
+#footer-links {
   color: white;
   padding: 8px;
   border-radius: 5px;
 }
 
-# footer -link {
+#footer-link {
   text-decoration: none;
   font-weight: bold;
 }
 
-# footer ul {
+#footer ul {
   display: flex;
 }
 
-# footer li {
+#footer li {
   list-style: none;
   font-size: 1.25rem;
 }
