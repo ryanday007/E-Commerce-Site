@@ -257,9 +257,166 @@ body {
 }
 
 /* Footer Styles */
-footer {
-  background-color: rgb(45, 44, 45);
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 8%;
   color: white;
-  text-align: center;
-  padding: 1rem;
+  background-color: rgb(45, 44, 45);
+  font-size: medium;
+}
+
+#footer-img {
+  height: 50%;
+  width: auto;
+}
+
+# footer -links {
+  display: flex;
+  gap: 16px;
+}
+# footer -link {
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+# footer -link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+# footer ul {
+  display: flex;
+}
+
+# footer li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+#footer-links {
+  display: flex;
+  gap: 15px;
+}
+#footer-link {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#footer-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer ul {
+  display: flex;
+}
+
+#footer li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+#footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  #featured-books .book-list,
+  .book-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #latest-books .book-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .highlight {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 5%;
+    gap: 1rem;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero h1 {
+    font-size: 2.25rem;
+  }
+
+  #hero img {
+    width: 60%;
+  }
+
+  #latest-books .book-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-item {
+    width: 80%;
+  }
+
+  #footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 5%;
+  }
+
+  #footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 1.75rem;
+  }
+
+  #hero-button,
+  #cta-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  #latest-books .book-list {
+    grid-template-columns: 1fr;
+  }
+
+  .book-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-item img {
+    max-width: 100px;
+  }
+
+  .cta-bar h2 {
+    font-size: 1.5rem;
+  }
 }
