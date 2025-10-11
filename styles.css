@@ -12,6 +12,17 @@ body {
   color: rgb(137, 64, 137);
 }
 
+.space {
+  margin: 0;
+  padding: 20px;
+}
+
+.white-space {
+  margin: 0;
+  padding: 40px;
+  background-color: white;
+}
+
 /* Nav Styles */
 
 #nav {
@@ -34,13 +45,14 @@ body {
   display: flex;
   gap: 15px;
 }
-#nav-link {
+
+.nav-link {
   color: rgb(137, 64, 137);
   padding: 10px;
   border-radius: 5px;
 }
 
-#nav-link {
+.nav-link {
   text-decoration: none;
   font-weight: bold;
 }
@@ -60,12 +72,12 @@ body {
 
 /*Hamburger Nav Styles*/
 .menu_backdrop {
-  position: absolute;
-  background-color: #242424;
-  height: 60%;
-  left: 0;
-  right: 0;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60%;
+  background-color: rgba(36, 36, 36, 0.95);
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -74,6 +86,7 @@ body {
 
 .btn-menu-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -92,25 +105,32 @@ body {
 }
 
 .btn_menu--close {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  padding: 10px;
   font-size: 32px;
+  color: rgb(137, 64, 137);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 .menu-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transform: translateX(-50%);
+  padding-left: 6%;
 }
 
 .menu-list {
-  padding: 10px 0;
+  padding: 8px 0;
   list-style: none;
 }
 
@@ -333,7 +353,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0 8%;
+  padding: 2% 0 5% 0;
   color: white;
   background-color: rgb(45, 44, 45);
   font-size: medium;
@@ -343,6 +363,8 @@ body {
   height: 50px;
   width: auto;
   margin-top: 2%;
+  padding: 1%;
+  background-color: white;
 }
 
 #footer-links {
@@ -373,13 +395,13 @@ body {
   display: flex;
   gap: 15px;
 }
-#footer-link {
+.footer-link {
   color: white;
   padding: 10px;
   border-radius: 5px;
 }
 
-#footer-link {
+.footer-link {
   text-decoration: none;
   font-weight: bold;
 }
@@ -393,7 +415,7 @@ body {
   font-size: 1.25rem;
 }
 
-#footer-link:hover {
+.footer-link:hover {
   text-decoration: underline;
 }
 
@@ -424,7 +446,7 @@ body {
     gap: 1rem;
   }
 
-  #nav-link {
+  .nav-link {
     display: none;
   }
 

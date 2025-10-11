@@ -16,35 +16,37 @@
       <div class="section" id="nav">
         <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
         <ul id="menu-item">
-          <li class="menu-list"><a id="nav-link" href="#home">Home</a></li>
-          <li class="menu-list"><a id="nav-link" href="#books">Books</a></li>
+          <li class="menu-list"><a class="nav-link" href="#home">Home</a></li>
+          <li class="menu-list"><a class="nav-link" href="#books">Books</a></li>
           <li class="menu-list">
-            <a id="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
 
       <!-- Hamburger Menu -->
       <div class="btn-menu-container">
-        <button class="btn_menu">
+        <button class="btn_menu" aria-label="Open menu">
           <i class="fas fa-bars"></i>
         </button>
       </div>
       <div class="menu_backdrop hidden">
-        <button class="btn_menu btn_menu--close">
-          <i class="fas fa-times"></i>
-        </button>
-        <ul class="menu-item">
-          <li class="menu-list">
-            <a class="menu-link" href="#home">Home</a>
-          </li>
-          <li class="menu-list">
-            <a class="menu-link" href="#books">Books</a>
-          </li>
-          <li class="menu-list">
-            <a class="menu-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <div class="menu-content">
+          <button class="btn_menu--close" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu-item">
+            <li class="menu-list">
+              <a class="menu-link" href="#home">Home</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-link" href="#books">Books</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -54,7 +56,7 @@
         <p>Your one-stop reading shop!</p>
         <button id="hero-button">Browse Books</button>
         <img src="./assets/Undraw_Books.svg" alt="Books Illustration" />
-        <img class="wave" src="./assets/PurpWave.jpg" alt="" />
+        <img class="wave" src="./assets/PurpWave.jpg" alt="purple-wave" />
       </div>
       <!--About -->
       <div class="section" id="about">
@@ -76,7 +78,7 @@
             <p>Get your hands on books for as little as $10</p>
           </div>
         </div>
-        <img class="wave" src="./assets/WhiteWave.jpg" alt="" />
+        <img class="wave" src="./assets/WhiteWave.jpg" alt="white-wave" />
       </div>
       <!--Featured Books-->
       <section class="section" id="featured-books">
@@ -220,15 +222,14 @@
         <img id="footer-img" src="./assets/Library.svg" alt="Library Logo" />
 
         <ul id="footer-links">
-          <li><a id="footer-link" href="#home">Home</a></li>
-          <li><a id="footer-link" href="#books">Books</a></li>
-          <li><a id="footer-link" href="#contact">Contact</a></li>
+          <li><a class="footer-link" href="#home">Home</a></li>
+          <li><a class="footer-link" href="#books">Books</a></li>
+          <li><a class="footer-link" href="#contact">Contact</a></li>
         </ul>
         <p>&copy; 2024 E-Commerce Site. All rights reserved.</p>
-        <p>&nbsp;</p>
       </div>
     </footer>
-    <p>&nbsp;</p>
+    <div class="white-space"></div>
     <script>
       const menuToggle = document.querySelector(".btn_menu");
       const menuClose = document.querySelector(".btn_menu--close");
