@@ -15,10 +15,35 @@
       <!-- Nav -->
       <div class="section" id="nav">
         <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
-        <ul id="nav-links">
-          <li><a id="nav-link" href="#home">Home</a></li>
-          <li><a id="nav-link" href="#books">Books</a></li>
-          <li><a id="nav-link" href="#contact">Contact</a></li>
+        <ul id="menu-item">
+          <li class="menu-list"><a id="nav-link" href="#home">Home</a></li>
+          <li class="menu-list"><a id="nav-link" href="#books">Books</a></li>
+          <li class="menu-list">
+            <a id="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <div class="btn-menu-container">
+        <button class="btn_menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="menu_backdrop hidden">
+        <button class="btn_menu btn_menu--close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-item">
+          <li class="menu-list">
+            <a class="menu-link" href="#home">Home</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="#books">Books</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -204,5 +229,18 @@
       </div>
     </footer>
     <p>&nbsp;</p>
+    <script>
+      const menuToggle = document.querySelector(".btn_menu");
+      const menuClose = document.querySelector(".btn_menu--close");
+      const menuBackdrop = document.querySelector(".menu_backdrop");
+
+      menuToggle.addEventListener("click", () => {
+        menuBackdrop.classList.remove("hidden");
+      });
+
+      menuClose.addEventListener("click", () => {
+        menuBackdrop.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
