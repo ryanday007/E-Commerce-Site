@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books | Ryan E. Day</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/722c6dc046.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="section" id="nav">
+        <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
+        <ul id="menu-item">
+          <li class="menu-list">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="menu-list">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="menu-list">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Books List -->
+    <section class="section" id="books">
+      <h1>Browse Our Collection</h1>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by title, author, or genre..."
+      />
+
+      <ul id="bookList">
+        <li
+          data-title="Cracking the Coding Interview"
+          data-author="Gayle Laakmann McDowell"
+          data-genre="Programming"
+        >
+          <h3>Cracking the Coding Interview</h3>
+          <p>by Gayle Laakmann McDowell</p>
+          <p>Genre: Programming</p>
+        </li>
+        <li
+          data-title="Atomic Habits"
+          data-author="James Clear"
+          data-genre="Self-help"
+        >
+          <h3>Atomic Habits</h3>
+          <p>by James Clear</p>
+          <p>Genre: Self-help</p>
+        </li>
+        <li
+          data-title="Can't Hurt Me"
+          data-author="David Goggins"
+          data-genre="Memoir"
+        >
+          <h3>Can't Hurt Me</h3>
+          <p>by David Goggins</p>
+          <p>Genre: Memoir</p>
+        </li>
+        <li
+          data-title="Deep Work"
+          data-author="Cal Newport"
+          data-genre="Productivity"
+        >
+          <h3>Deep Work</h3>
+          <p>by Cal Newport</p>
+          <p>Genre: Productivity</p>
+        </li>
+        <li
+          data-title="The 10X Rule"
+          data-author="Grant Cardone"
+          data-genre="Business"
+        >
+          <h3>The 10X Rule</h3>
+          <p>by Grant Cardone</p>
+          <p>Genre: Business</p>
+        </li>
+        <li
+          data-title="Be Obsessed or Be Average"
+          data-author="Grant Cardone"
+          data-genre="Business"
+        >
+          <h3>Be Obsessed or Be Average</h3>
+          <p>by Grant Cardone</p>
+          <p>Genre: Business</p>
+        </li>
+        <li
+          data-title="Rich Dad Poor Dad"
+          data-author="Robert Kiyosaki"
+          data-genre="Finance"
+        >
+          <h3>Rich Dad Poor Dad</h3>
+          <p>by Robert Kiyosaki</p>
+          <p>Genre: Finance</p>
+        </li>
+        <li
+          data-title="Cashflow Quadrant"
+          data-author="Robert Kiyosaki"
+          data-genre="Finance"
+        >
+          <h3>Cashflow Quadrant</h3>
+          <p>by Robert Kiyosaki</p>
+          <p>Genre: Finance</p>
+        </li>
+        <li
+          data-title="The 48 Laws of Power"
+          data-author="Robert Greene"
+          data-genre="Strategy"
+        >
+          <h3>The 48 Laws of Power</h3>
+          <p>by Robert Greene</p>
+          <p>Genre: Strategy</p>
+        </li>
+        <li
+          data-title="The 5 Second Rule"
+          data-author="Mel Robbins"
+          data-genre="Motivation"
+        >
+          <h3>The 5 Second Rule</h3>
+          <p>by Mel Robbins</p>
+          <p>Genre: Motivation</p>
+        </li>
+        <li
+          data-title="Your Next Five Moves"
+          data-author="Patrick Bet-David"
+          data-genre="Strategy"
+        >
+          <h3>Your Next Five Moves</h3>
+          <p>by Patrick Bet-David</p>
+          <p>Genre: Strategy</p>
+        </li>
+        <li
+          data-title="Mastery"
+          data-author="Robert Greene"
+          data-genre="Self-development"
+        >
+          <h3>Mastery</h3>
+          <p>by Robert Greene</p>
+          <p>Genre: Self-development</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section" id="footer">
+        <img id="footer-img" src="./assets/Library.svg" alt="Library Logo" />
+
+        <ul id="footer-links">
+          <li><a class="footer-link" href="index.html">Home</a></li>
+          <li><a class="footer-link" href="#books">Books</a></li>
+          <li><a class="footer-link" href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 E-Commerce Site. All rights reserved.</p>
+      </div>
+    </footer>
+    <div class="white-space"></div>
+
+    <!-- Search Script -->
+    <script>
+      const searchInput = document.getElementById("searchInput");
+      const bookList = document.getElementById("bookList");
+      const books = bookList.getElementsByTagName("li");
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = searchInput.value.toLowerCase();
+        for (let i = 0; i < books.length; i++) {
+          const title = books[i].dataset.title.toLowerCase();
+          const author = books[i].dataset.author.toLowerCase();
+          const genre = books[i].dataset.genre.toLowerCase();
+          const match =
+            title.includes(filter) ||
+            author.includes(filter) ||
+            genre.includes(filter);
+          books[i].style.display = match ? "" : "none";
+        }
+      });
+    </script>
+  </body>
+</html>
