@@ -19,14 +19,40 @@
           <li class="menu-list"><a class="nav-link" href="index.html">Home</a></li>
           <li class="menu-list"><a class="nav-link" href="#books">Books</a></li>
           <li class="menu-list">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
 
+      <!-- Hamburger Menu -->
+      <div class="btn-menu-container">
+        <button class="btn_menu" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="menu_backdrop hidden">
+        <div class="menu-content">
+          <button class="btn_menu--close" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu-item">
+            <li class="menu-list">
+              <a class="menu-link" href="index.html">Home</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-link" href="#books">Books</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
       <!-- Contact Form -->
       <section class="section" id="contact-form">
-    <h1>Contact Ryan E. Day</h1>
+    <p><strong>Contact Ryan E. Day</strong></p>
     <p>Have a question, collaboration idea, or just want to say hello? Drop me a message below.</p>
     <form class="contact-form">
       <label for="name">Name</label>
@@ -36,12 +62,26 @@
       <input type="email" id="email" name="email" required />
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="3" required></textarea>
 
       <button type="submit" class="contact-form button">Send Message</button>
     </form>
     <div class="white-space"></div>
   </section>
 
+<!-- Hamburger Menu Script -->
+  <script>
+      const menuToggle = document.querySelector(".btn_menu");
+      const menuClose = document.querySelector(".btn_menu--close");
+      const menuBackdrop = document.querySelector(".menu_backdrop");
+
+      menuToggle.addEventListener("click", () => {
+        menuBackdrop.classList.remove("hidden");
+      });
+
+      menuClose.addEventListener("click", () => {
+        menuBackdrop.classList.add("hidden");
+      });
+    </script>
 </body>
 </html>
