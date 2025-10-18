@@ -12,6 +12,7 @@
   </head>
   <body>
     <header>
+      <!-- Nav -->
       <div class="section" id="nav">
         <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
         <ul id="menu-item">
@@ -26,11 +27,34 @@
           </li>
         </ul>
       </div>
+      <!-- Hamburger Menu -->
+      <div class="btn-menu-container">
+        <button class="btn_menu" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="menu_backdrop hidden">
+        <div class="menu-content">
+          <button class="btn_menu--close" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu-item">
+            <li class="menu-list">
+              <a class="menu-link" href="index.html">Home</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-link" href="books.html">Books</a>
+            </li>
+            <li class="menu-list">
+              <a class="menu-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- Books List -->
     <section id="books">
-
       <h2>Browse Our Collection</h2>
       <input
         type="text"
@@ -40,111 +64,222 @@
 
       <ul class="book-list" id="bookList">
         <li
+          class="book-item"
           data-title="Cracking the Coding Interview"
           data-author="Gayle Laakmann McDowell"
           data-genre="Programming"
         >
+          <img
+            src="./assets/crack the coding interview.png"
+            alt="Cracking the Coding Interview"
+          />
           <h3>Cracking the Coding Interview</h3>
-          <p>by Gayle Laakmann McDowell</p>
+          <p class="author">by Gayle Laakmann McDowell</p>
+          <p><span class="discount">$18.95</span> $14.95</p>
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
           <p>Genre: Programming</p>
         </li>
         <li
+          class="book-item"
           data-title="Atomic Habits"
           data-author="James Clear"
           data-genre="Self-help"
         >
+          <img src="./assets/atomic habits.jpg" alt="Atomic Habits" />
           <h3>Atomic Habits</h3>
-          <p>by James Clear</p>
+          <p class="author">by James Clear</p>
+          <p><span class="discount">$18.95</span> $12.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+           </div>
           <p>Genre: Self-help</p>
         </li>
         <li
+          class="book-item"
           data-title="Can't Hurt Me"
           data-author="David Goggins"
           data-genre="Memoir"
         >
+          <img src="./assets/david goggins.jpeg" alt="" />
           <h3>Can't Hurt Me</h3>
-          <p>by David Goggins</p>
+          <p class="author">by David Goggins</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
           <p>Genre: Memoir</p>
         </li>
         <li
+          class="book-item"
           data-title="Deep Work"
           data-author="Cal Newport"
           data-genre="Productivity"
         >
+          <img src="./assets/deep work.jpeg" alt="Deep Work" />
           <h3>Deep Work</h3>
-          <p>by Cal Newport</p>
+          <p class="author">by Cal Newport</p>
+          <p><span class="discount">$18.95</span> $14.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Productivity</p>
         </li>
         <li
+          class="book-item"
           data-title="The 10X Rule"
           data-author="Grant Cardone"
           data-genre="Business"
         >
+          <img src="./assets/book-1.jpeg" alt="The 10X Rule" />
           <h3>The 10X Rule</h3>
-          <p>by Grant Cardone</p>
+          <p class="author">by Grant Cardone</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Business</p>
         </li>
         <li
+          class="book-item"
           data-title="Be Obsessed or Be Average"
           data-author="Grant Cardone"
           data-genre="Business"
         >
+          <img src="./assets/book-2.jpeg" alt="Be Obsessed or Be Average" />
           <h3>Be Obsessed or Be Average</h3>
-          <p>by Grant Cardone</p>
+          <p class="author">by Grant Cardone</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Business</p>
         </li>
         <li
+          class="book-item"
           data-title="Rich Dad Poor Dad"
           data-author="Robert Kiyosaki"
           data-genre="Finance"
         >
+          <img src="./assets/book-3.jpeg" alt="Rich Dad Poor Dad" />
           <h3>Rich Dad Poor Dad</h3>
-          <p>by Robert Kiyosaki</p>
+          <p class="author">by Robert Kiyosaki</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Finance</p>
         </li>
         <li
+          class="book-item"
           data-title="Cashflow Quadrant"
           data-author="Robert Kiyosaki"
           data-genre="Finance"
         >
+          <img src="./assets/book-4.jpeg" alt="Cashflow Quadrant" />
           <h3>Cashflow Quadrant</h3>
-          <p>by Robert Kiyosaki</p>
+          <p class="author">by Robert Kiyosaki</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Finance</p>
         </li>
         <li
+          class="book-item"
           data-title="The 48 Laws of Power"
           data-author="Robert Greene"
           data-genre="Strategy"
         >
+          <img src="./assets/book-5.jpeg" alt="The 48 Laws of Power" />
           <h3>The 48 Laws of Power</h3>
-          <p>by Robert Greene</p>
+          <p class="author">by Robert Greene</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Strategy</p>
         </li>
         <li
+          class="book-item"
           data-title="The 5 Second Rule"
           data-author="Mel Robbins"
           data-genre="Motivation"
         >
+          <img src="./assets/book-6.jpeg" alt="The 5 Second Rule" />
           <h3>The 5 Second Rule</h3>
-          <p>by Mel Robbins</p>
+          <p class="author">by Mel Robbins</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Motivation</p>
         </li>
         <li
+          class="book-item"
           data-title="Your Next Five Moves"
           data-author="Patrick Bet-David"
           data-genre="Strategy"
         >
+          <img src="./assets/book-7.jpg" alt="Your Next Five Moves" />
           <h3>Your Next Five Moves</h3>
-          <p>by Patrick Bet-David</p>
+          <p class="author">by Patrick Bet-David</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Strategy</p>
         </li>
         <li
+          class="book-item"
           data-title="Mastery"
           data-author="Robert Greene"
           data-genre="Self-development"
         >
+          <img src="./assets/book-8.jpeg" alt="Mastery" />
           <h3>Mastery</h3>
-          <p>by Robert Greene</p>
+          <p class="author">by Robert Greene</p>
+          <p>$24.95</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p>Genre: Self-development</p>
         </li>
       </ul>
@@ -183,6 +318,20 @@
             genre.includes(filter);
           books[i].style.display = match ? "" : "none";
         }
+      });
+    </script>
+    <!-- Hamburger Menu Script -->
+    <script>
+      const menuToggle = document.querySelector(".btn_menu");
+      const menuClose = document.querySelector(".btn_menu--close");
+      const menuBackdrop = document.querySelector(".menu_backdrop");
+
+      menuToggle.addEventListener("click", () => {
+        menuBackdrop.classList.remove("hidden");
+      });
+
+      menuClose.addEventListener("click", () => {
+        menuBackdrop.classList.add("hidden");
       });
     </script>
   </body>
