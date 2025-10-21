@@ -374,6 +374,11 @@ section {
   text-decoration: underline;
 }
 
+.book-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .book-list p {
   margin: 0.25rem 0;
   font-size: 0.95rem;
