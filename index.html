@@ -1,282 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Commerce Site</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/722c6dc046.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <!-- Nav -->
-      <div class="section" id="nav">
-        <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
-        <ul id="menu-item">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/722c6dc046.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Nav -->
+    <div class="section" id="nav">
+      <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
+      <ul id="menu-item">
+        <li class="menu-list">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="menu-list">
+          <a class="nav-link" href="books.html">Books</a>
+        </li>
+        <li class="menu-list">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Hamburger Menu -->
+    <div class="btn-menu-container">
+      <button class="btn_menu" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="menu_backdrop hidden">
+      <div class="menu-content">
+        <button class="btn_menu--close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-item">
           <li class="menu-list">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="menu-link" href="index.html">Home</a>
           </li>
           <li class="menu-list">
-            <a class="nav-link" href="books.html">Books</a>
+            <a class="menu-link" href="books.html">Books</a>
           </li>
           <li class="menu-list">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="menu-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
-      <!-- Hamburger Menu -->
-      <div class="btn-menu-container">
-        <button class="btn_menu" aria-label="Open menu">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <div class="menu_backdrop hidden">
-        <div class="menu-content">
-          <button class="btn_menu--close" aria-label="Close menu">
-            <i class="fas fa-times"></i>
-          </button>
-          <ul class="menu-item">
-            <li class="menu-list">
-              <a class="menu-link" href="index.html">Home</a>
-            </li>
-            <li class="menu-list">
-              <a class="menu-link" href="books.html">Books</a>
-            </li>
-            <li class="menu-list">
-              <a class="menu-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!--Hero -->
-      <section id="hero">
-        <h1>Welcome to America's Favorite Online Library</h1>
-        <p>Your one-stop reading shop!</p>
-        <div>
-          <a
-            href="books.html"
-            class="cta-button"
-            aria-label="Browse our book collection"
-          >
-            Browse All Books
-          </a>
-        </div>
-        <img src="./assets/Undraw_Books.svg" alt="Books Illustration" />
-        <img class="wave" src="./assets/PurpWave.jpg" alt="purple-wave" />
-      </section>
-      <!--About -->
-      <section id="about">
-        <h2>Why choose <span class="span-purple">Library?</span></h2>
-        <div class="highlight">
-          <div class="highlight-item">
-            <i class="fa-solid fa-bolt-lightning"></i>
-            <h3>Quick & Easy</h3>
-            <p>Instant online access to the books you purchase</p>
-          </div>
-          <div class="highlight-item">
-            <i class="fa-solid fa-book-open"></i>
-            <h3>10k+ Books</h3>
-            <p>Library has books in all your favorite categories</p>
-          </div>
-          <div class="highlight-item">
-            <i class="fa-solid fa-tag"></i>
-            <h3>Affordable</h3>
-            <p>Get your hands on books for as little as $10</p>
-          </div>
-        </div>
-        <img class="wave" src="./assets/WhiteWave.jpg" alt="white-wave" />
-      </section>
-      <!--Featured Books-->
-      <section id="featured-books">
-        <h2>Featured <span class="span-purple">Books</span></h2>
-        <div class="book-list">
-          <div class="book-item">
-            <img src="./assets/Crack the Coding Interview.png" alt="Book 1" />
-            <h3>Cracking The Coding Interview</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p><span class="discount">$18.95</span> $14.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/atomic habits.jpg" alt="Atomic Habits book" />
-            <h3>Atomic Habits</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p><span class="discount">$18.95</span> $12.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/david goggins.jpeg" alt="David Goggins book" />
-            <h3>Can't Hurt Me</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/deep work.jpeg" alt="Deep Work book" />
-            <h3>Deep Work</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p><span class="discount">$18.95</span> $14.95</p>
-          </div>
-        </div>
-      </section>
-      <!--Latest Books-->
-      <section id="latest-books">
-        <h2>Latest <span class="span-purple">Books</span></h2>
-        <div class="book-list">
-          <div class="book-item">
-            <img src="./assets/book-1.jpeg" alt="Book 1" />
-            <h3>The 10X Rule</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-2.jpeg" alt="Book 2" />
-            <h3>Be Obsessed or Be Average</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-3.jpeg" alt="Book 3" />
-            <h3>Rich Dad Poor Dad</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-4.jpeg" alt="Book 4" />
-            <h3>Cashflow Quadrant</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-5.jpeg" alt="Book 5" />
-            <h3>Laws of Power</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-6.jpeg" alt="Book 6" />
-            <h3>The 5 Second Rule</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-7.jpg" alt="Book 7" />
-            <h3>Your Next Five Moves</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-          <div class="book-item">
-            <img src="./assets/book-8.jpeg" alt="Book 8" />
-            <h3>Mastery</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <p>$24.95</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <div class="cta-bar">
-        <h2>Discover your next favorite book today!</h2>
-        <a
-          href="books.html"
-          class="cta-button"
-          aria-label="Browse our book collection"
-        >
+    </div>
+  </header>
+  <main>
+    <!--Hero -->
+    <section id="hero">
+      <h1>Welcome to America's Favorite Online Library</h1>
+      <p>Your one-stop reading shop!</p>
+      <div>
+        <a href="books.html" class="cta-button" aria-label="Browse our book collection">
           Browse All Books
         </a>
       </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="section" id="footer">
-        <img id="footer-img" src="./assets/Library.svg" alt="Library Logo" />
-
-        <ul id="footer-links">
-          <li><a class="footer-link" href="index.html">Home</a></li>
-          <li><a class="footer-link" href="books.html">Books</a></li>
-          <li><a class="footer-link" href="contact.html">Contact</a></li>
-        </ul>
-        <p>&copy; 2024 E-Commerce Site. All rights reserved.</p>
+      <img src="./assets/Undraw_Books.svg" alt="Books Illustration" />
+      <img class="wave" src="./assets/PurpWave.jpg" alt="purple-wave" />
+    </section>
+    <!--About -->
+    <section id="about">
+      <h2>Why choose <span class="span-purple">Library?</span></h2>
+      <div class="highlight">
+        <div class="highlight-item">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>Quick & Easy</h3>
+          <p>Instant online access to the books you purchase</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>10k+ Books</h3>
+          <p>Library has books in all your favorite categories</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-tag"></i>
+          <h3>Affordable</h3>
+          <p>Get your hands on books for as little as $10</p>
+        </div>
       </div>
-    </footer>
-    <div class="white-space"></div>
+      <img class="wave" src="./assets/WhiteWave.jpg" alt="white-wave" />
+    </section>
+    <!--Featured Books-->
+    <section id="featured-books">
+      <h2>Featured <span class="span-purple">Books</span></h2>
+      <div class="book-list">
+        <div class="book-item">
+          <a href="book-detail-1.html"><img src="./assets/Crack the Coding Interview.png" alt="Book 1" /></a>
+          <a href="book-detail-1.html">
+            <h3>Cracking The Coding Interview</h3>
+          </a>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p><span class="discount">$18.95</span> $14.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/atomic habits.jpg" alt="Atomic Habits book" />
+          <h3>Atomic Habits</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p><span class="discount">$18.95</span> $12.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/david goggins.jpeg" alt="David Goggins book" />
+          <h3>Can't Hurt Me</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/deep work.jpeg" alt="Deep Work book" />
+          <h3>Deep Work</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p><span class="discount">$18.95</span> $14.95</p>
+        </div>
+      </div>
+    </section>
+    <!--Latest Books-->
+    <section id="latest-books">
+      <h2>Latest <span class="span-purple">Books</span></h2>
+      <div class="book-list">
+        <div class="book-item">
+          <img src="./assets/book-1.jpeg" alt="Book 1" />
+          <h3>The 10X Rule</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-2.jpeg" alt="Book 2" />
+          <h3>Be Obsessed or Be Average</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-3.jpeg" alt="Book 3" />
+          <h3>Rich Dad Poor Dad</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-4.jpeg" alt="Book 4" />
+          <h3>Cashflow Quadrant</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-5.jpeg" alt="Book 5" />
+          <h3>Laws of Power</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-6.jpeg" alt="Book 6" />
+          <h3>The 5 Second Rule</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-7.jpg" alt="Book 7" />
+          <h3>Your Next Five Moves</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+        <div class="book-item">
+          <img src="./assets/book-8.jpeg" alt="Book 8" />
+          <h3>Mastery</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p>$24.95</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Script -->
-    <script src="script.js"></script>
-  </body>
+    <!-- CTA -->
+    <div class="cta-bar">
+      <h2>Discover your next favorite book today!</h2>
+      <a href="books.html" class="cta-button" aria-label="Browse our book collection">
+        Browse All Books
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="section" id="footer">
+      <img id="footer-img" src="./assets/Library.svg" alt="Library Logo" />
+
+      <ul id="footer-links">
+        <li><a class="footer-link" href="index.html">Home</a></li>
+        <li><a class="footer-link" href="books.html">Books</a></li>
+        <li><a class="footer-link" href="contact.html">Contact</a></li>
+      </ul>
+      <p>&copy; 2024 E-Commerce Site. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="white-space"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
 </html>

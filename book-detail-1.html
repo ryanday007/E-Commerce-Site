@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cracking the Coding Interview – Book Details</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="section" id="nav">
+      <img id="nav-img" src="./assets/Library.svg" alt="Library Logo" />
+      <ul id="menu-item">
+        <li class="menu-list">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="menu-list">
+          <a class="nav-link" href="books.html">Books</a>
+        </li>
+        <li class="menu-list">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Hamburger Menu -->
+    <div class="btn-menu-container">
+      <button class="btn_menu" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="menu_backdrop hidden">
+      <div class="menu-content">
+        <button class="btn_menu--close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-item">
+          <li class="menu-list">
+            <a class="menu-link" href="index.html">Home</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="books.html">Books</a>
+          </li>
+          <li class="menu-list">
+            <a class="menu-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <nav class="secondary-nav">
+    <ul class="category-menu">
+      <li><button data-genre="Programming">Programming</button></li>
+      <li><button data-genre="Self-help">Self-help</button></li>
+      <li><button data-genre="Finance">Finance</button></li>
+      <li><button data-genre="Productivity">Productivity</button></li>
+      <li><button data-genre="Memoir">Memoir</button></li>
+      <li><button data-genre="Strategy">Strategy</button></li>
+      <li><button data-genre="Business">Business</button></li>
+      <li><button data-genre="Fiction">Fiction</button></li>
+      <li><button data-genre="all">All Books</button></li>
+    </ul>
+  </nav>
+
+  <!-- Book Detail Section -->
+  <div class="book-detail">
+    <div class="book-detail-info">
+      <div>
+        <img src="./assets/crack the coding interview.png" alt="Cracking the Coding Interview book cover" />
+      </div>
+      <div class="book-about">
+        <h2>
+          Cracking the Coding Interview
+          <span class="span-purple">(6th Edition)</span>
+        </h2>
+        <p>by <strong>Gayle Laakmann McDowell</strong></p>
+        <p><strong>Publisher:</strong> CareerCup</p>
+        <p><strong>Published:</strong> July 2015</p>
+        <p><strong>Format:</strong> Paperback</p>
+        <p><strong>Genre:</strong> Programming</p>
+        <p><strong>Status:</strong> In Stock</p>
+        <button class="cta-button" aria-label="Add to Cart">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="book-detail__features">
+      <p><strong>Features:</strong></p>
+      <ul>
+        <li>189 programming interview questions and solutions</li>
+        <li>Detailed walkthroughs of problem-solving strategies</li>
+        <li>Tips for behavioral interviews and resume prep</li>
+        <li>Insights from top tech companies</li>
+      </ul>
+
+      <p><strong>Accolades:</strong></p>
+      <ul>
+        <li>Top-rated technical interview prep book</li>
+        <li>Used by candidates at Google, Amazon, Facebook, and more</li>
+        <li>Over 1 million copies sold</li>
+      </ul>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section" id="footer">
+        <img id="footer-img" src="./assets/Library.svg" alt="Library Logo" />
+
+        <ul id="footer-links">
+          <li><a class="footer-link" href="index.html">Home</a></li>
+          <li><a class="footer-link" href="books.html">Books</a></li>
+          <li><a class="footer-link" href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 E-Commerce Site. All rights reserved.</p>
+      </div>
+    </footer>
+    <div class="white-space"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
