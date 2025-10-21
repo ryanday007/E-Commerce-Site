@@ -57,9 +57,15 @@
       <section id="hero">
         <h1>Welcome to America's Favorite Online Library</h1>
         <p>Your one-stop reading shop!</p>
-        <button id="hero-button" aria-label="open-books">
-          <a class="hero-link" href="books.html">Browse Books</a>
-        </button>
+        <div>
+          <a
+            href="books.html"
+            class="cta-button"
+            aria-label="Browse our book collection"
+          >
+            Browse All Books
+          </a>
+        </div>
         <img src="./assets/Undraw_Books.svg" alt="Books Illustration" />
         <img class="wave" src="./assets/PurpWave.jpg" alt="purple-wave" />
       </section>
@@ -244,10 +250,14 @@
 
       <!-- CTA -->
       <div class="cta-bar">
-        <h2>Explore more <span class="span-purple">books</span></h2>
-        <button aria-label="open-books" id="cta-button">
-          <a class="cta-link" href="books.html">Browse Books</a>
-        </button>
+        <h2>Discover your next favorite book today!</h2>
+        <a
+          href="books.html"
+          class="cta-button"
+          aria-label="Browse our book collection"
+        >
+          Browse All Books
+        </a>
       </div>
     </main>
 
@@ -266,19 +276,7 @@
     </footer>
     <div class="white-space"></div>
 
-    <!-- Hamburger Menu Script -->
-    <script>
-      const menuToggle = document.querySelector(".btn_menu");
-      const menuClose = document.querySelector(".btn_menu--close");
-      const menuBackdrop = document.querySelector(".menu_backdrop");
-
-      menuToggle.addEventListener("click", () => {
-        menuBackdrop.classList.remove("hidden");
-      });
-
-      menuClose.addEventListener("click", () => {
-        menuBackdrop.classList.add("hidden");
-      });
-    </script>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>

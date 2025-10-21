@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
       <!-- Nav -->
@@ -53,14 +54,28 @@
       </div>
     </header>
 
-    <!-- Books List -->
+    <!-- Search Bar -->
     <section id="books">
       <h2>Browse Our Collection</h2>
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Search by title, author, or genre..."
-      />
+      <nav class="secondary-nav">
+        <ul class="category-menu">
+          <li><button data-genre="Programming">Programming</button></li>
+          <li><button data-genre="Self-help">Self-help</button></li>
+          <li><button data-genre="Finance">Finance</button></li>
+          <li><button data-genre="Productivity">Productivity</button></li>
+          <li><button data-genre="Memoir">Memoir</button></li>
+          <li><button data-genre="Strategy">Strategy</button></li>
+          <li><button data-genre="Business">Business</button></li>
+          <li><button data-genre="Fiction">Fiction</button></li>
+          <li><button data-genre="all">All Books</button></li>
+        </ul>
+      </nav>
+
+      <!-- Books List -->
+      <!-- Fallback message -->
+      <p id="noResults" class="hidden">
+        No results found. Try another genre or keyword.
+      </p>
 
       <ul class="book-list" id="bookList">
         <li
@@ -76,7 +91,6 @@
           <h3>Cracking the Coding Interview</h3>
           <p class="author">by Gayle Laakmann McDowell</p>
           <p><span class="discount">$18.95</span> $14.95</p>
-          </div>
           <div class="stars">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -101,7 +115,7 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
-           </div>
+          </div>
           <p>Genre: Self-help</p>
         </li>
         <li
@@ -300,39 +314,7 @@
     </footer>
     <div class="white-space"></div>
 
-    <!-- Search Script -->
-    <script>
-      const searchInput = document.getElementById("searchInput");
-      const bookList = document.getElementById("bookList");
-      const books = bookList.getElementsByTagName("li");
-
-      searchInput.addEventListener("keyup", function () {
-        const filter = searchInput.value.toLowerCase();
-        for (let i = 0; i < books.length; i++) {
-          const title = books[i].dataset.title.toLowerCase();
-          const author = books[i].dataset.author.toLowerCase();
-          const genre = books[i].dataset.genre.toLowerCase();
-          const match =
-            title.includes(filter) ||
-            author.includes(filter) ||
-            genre.includes(filter);
-          books[i].style.display = match ? "" : "none";
-        }
-      });
-    </script>
-    <!-- Hamburger Menu Script -->
-    <script>
-      const menuToggle = document.querySelector(".btn_menu");
-      const menuClose = document.querySelector(".btn_menu--close");
-      const menuBackdrop = document.querySelector(".menu_backdrop");
-
-      menuToggle.addEventListener("click", () => {
-        menuBackdrop.classList.remove("hidden");
-      });
-
-      menuClose.addEventListener("click", () => {
-        menuBackdrop.classList.add("hidden");
-      });
-    </script>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>
